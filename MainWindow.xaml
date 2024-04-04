@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="MediumPurple" Closing="Window_Closing">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="LoginTB" Background="White" Grid.Row="1" Grid.Column="0" Height="50" Width="300" Margin="250,0,250,58"/>
+        <TextBox x:Name="passwordTB" Background="White" Grid.Row="2" Grid.Column="0" Height="50" Width="300" Margin="250,10,250,49"/>
+        <TextBlock Text="Не зарегистрированы? " TextAlignment="Center" FontSize="15" Background="MediumPurple" Grid.Row="3" Margin="250,0,390,89"/>
+        <TextBlock Text="Зарегистрироваться" Foreground="CornflowerBlue" MouseLeftButtonDown="TextBlock_MouseLeftButtonDown"  TextAlignment="Center" FontSize="15" Background="MediumPurple" Grid.Row="3" Margin="416,0,224,89"/>
+        <Image Margin="204,4,555,62"  Stretch="Fill" RenderTransformOrigin="-0.268,2.447" Grid.Row="1"/>
+        <Image Margin="203,12,555,51"  Stretch="Fill" Grid.Row="2" RenderTransformOrigin="1.976,-1.395"/>
+        <Image Margin="555,15,204,55"  Stretch="Fill" Grid.Row="2"/>
+        <Button Click="Button_Click" Content="Войти" FontSize="20" HorizontalContentAlignment="Center" Height="50" Margin="325,29,325,29" Grid.Row="3"/>
+        <Image Margin="204,4,555,63" Source="/222/free-icon-font-user-3917688.png" Stretch="Fill" Grid.Row="1" RenderTransformOrigin="-0.359,-0.699"/>
+        <Image Margin="198,10,555,50" Source="/222/free-icon-font-lock-3917591.png" Stretch="Fill" Grid.Row="2"/>
+        <Image Margin="555,13,202,52" Source="/222/free-icon-font-eye-3917112.png" Stretch="Fill" Grid.Row="2" RenderTransformOrigin="-0.829,-0.882"/>
+
+    </Grid>
+</Window>
